@@ -1,18 +1,29 @@
 import React from 'react';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import './Header.css';
 
 const Header = () => {
     return (
-        <nav className='header'>
-            <a href="#" className="logo">Stock Watches</a>
-            <div className='navbar-item'>
-                <a href="/home">Home</a>
-                <a href="/checkout">Checkout</a>
-                <a href="/services">Services</a>
-                <a href="/blogs">Blogs</a>
-                <a href="/about">About</a>
-            </div>
-       </nav>
+        <div>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Container>
+                    <Navbar.Brand href="#home">Stock Watches</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto">
+                            
+                        </Nav>
+                        <Nav className='header-text'>
+                            <Nav.Link href="/home">Home</Nav.Link>  
+                            <Nav.Link href="/checkout">Checkout</Nav.Link>
+                            <Nav.Link href="/services">Services</Nav.Link>
+                            <Nav.Link href="/blogs">Blogs</Nav.Link>
+                            <Nav.Link href="/about">About</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </div>
     );
 };
 
