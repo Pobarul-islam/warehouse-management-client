@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Header.css';
+
 
 const Header = () => {
     return (
@@ -14,7 +14,9 @@ const Header = () => {
                         <Nav className="me-auto">
                             
                         </Nav>
+                       
                         <Nav className='header-text'>
+                            
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link as={Link} to="/checkout">Checkout</Nav.Link>
                             <Nav.Link as={Link} to="/services">Services</Nav.Link>

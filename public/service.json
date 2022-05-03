@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Best Practice Patient Education",
+        "img": "https://i.ibb.co/f0Dxxmj/1.png",
+        "price": "$ 300",
+        "description": "We help educate your patients on uninsured medical services and when they can expect to be charged"
+    },
+    {
+        "id": "2",
+        "name": "Patient Communication and Billing",
+        "img": "https://i.ibb.co/X5qNzZh/2.png",
+        "price": "$ 100",
+        "description": "We take care of communicating with your patients and managing the billing for uninsured medical services."
+    },
+    {
+        "id": "3",
+        "name": "Full-Service Administration",
+        "img": "https://i.ibb.co/ZXRHDy7/Untitled-design.png",
+        "price": "$ 150",
+        "description": "Our platform is customizable to meet the specific needs of your practice. we take time consuming tasks "
+    },
+    {
+        "id": "1",
+        "name": "Best Practice Patient Education",
+        "img": "https://i.ibb.co/f0Dxxmj/1.png",
+        "price": "$ 300",
+        "description": "We help educate your patients on uninsured medical services and when they can expect to be charged"
+    },
+    {
+        "id": "2",
+        "name": "Patient Communication and Billing",
+        "img": "https://i.ibb.co/X5qNzZh/2.png",
+        "price": "$ 100",
+        "description": "We take care of communicating with your patients and managing the billing for uninsured medical services."
+    },
+    {
+        "id": "3",
+        "name": "Full-Service Administration",
+        "img": "https://i.ibb.co/ZXRHDy7/Untitled-design.png",
+        "price": "$ 150",
+        "description": "Our platform is customizable to meet the specific needs of your practice. we take time consuming tasks "
+    }
+]
