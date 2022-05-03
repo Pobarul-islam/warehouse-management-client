@@ -1,44 +1,44 @@
 [
     {
         "id": "1",
-        "name": "Best Practice Patient Education",
+        "name": "Rolex",
         "img": "https://i.ibb.co/f0Dxxmj/1.png",
         "price": "$ 300",
-        "description": "We help educate your patients on uninsured medical services and when they can expect to be charged"
+        "description": "The name on a watch dial can tell you a lot. It might represent a range of intangible qualities, from history."
     },
     {
         "id": "2",
-        "name": "Patient Communication and Billing",
+        "name": "Seiko",
         "img": "https://i.ibb.co/X5qNzZh/2.png",
         "price": "$ 100",
-        "description": "We take care of communicating with your patients and managing the billing for uninsured medical services."
+        "description": "Internationally, Seiko was long associated with affordable but reliable everyman watches"
     },
     {
         "id": "3",
-        "name": "Full-Service Administration",
+        "name": "Patek Philippe",
         "img": "https://i.ibb.co/ZXRHDy7/Untitled-design.png",
         "price": "$ 150",
-        "description": "Our platform is customizable to meet the specific needs of your practice. we take time consuming tasks "
+        "description": "Alongside Rolex, Patek Philippe is widely regarded as one of the most prestigious and collectible names in watches."
     },
     {
         "id": "1",
-        "name": "Best Practice Patient Education",
+        "name": "Cartier",
         "img": "https://i.ibb.co/f0Dxxmj/1.png",
         "price": "$ 300",
-        "description": "We help educate your patients on uninsured medical services and when they can expect to be charged"
+        "description": "Cartier is sometimes thought of first as a jeweler, but it's also one of the most important historical watchmakers in the world. "
     },
     {
         "id": "2",
-        "name": "Patient Communication and Billing",
+        "name": "Apple",
         "img": "https://i.ibb.co/X5qNzZh/2.png",
         "price": "$ 100",
-        "description": "We take care of communicating with your patients and managing the billing for uninsured medical services."
+        "description": "The technology company is, like it or not, a major presence in the watch industry. "
     },
     {
         "id": "3",
-        "name": "Full-Service Administration",
+        "name": "Omega",
         "img": "https://i.ibb.co/ZXRHDy7/Untitled-design.png",
         "price": "$ 150",
-        "description": "Our platform is customizable to meet the specific needs of your practice. we take time consuming tasks "
+        "description": "From the moon landings to James Bond to its role as the Olympics' official timekeeper."
     }
 ]
