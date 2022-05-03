@@ -7,6 +7,7 @@ import Checkout from './Components/Pages/Checkout/Checkout'
 import Blogs from './Components/Pages/Blogs/Blogs';
 import About from './Components/Pages/About/About';
 import Services from './Components/Pages/Services/Services';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/footer' element={<Footer></Footer>}></Route>
 
       </Routes>
     </div>
