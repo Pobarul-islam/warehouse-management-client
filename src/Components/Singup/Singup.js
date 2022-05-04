@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 import './Singup.css'
 
 const Singup = () => {
@@ -8,6 +10,9 @@ const Singup = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
+    const navigate = useNavigate();
+
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
 
     const handleEmailBlur = event => {
         setEmail(event.target.value);
@@ -21,14 +26,26 @@ const Singup = () => {
         setConfirmPassword(event.target.value);
     }
 
+    if (user) {
+        navigate('/services')
+    }
     const handleCreateUser = event => {
         event.preventDefault();
+
+        if (password !== confirmPassword) {
+            setError('Your two password did not match')
+            return;
+        }
+        if (password.length < 6) {
+            setError('Password must be 6 characters');
+            return;
+        }
+
+        createUserWithEmailAndPassword(email, password);
     }
 
-    if (password !== confirmPassword) {
-        setError('Your two password did not match')
-        return;
-    }
+
+    
     return (
         <div className='singup-form mx-auto'>
             <h2 className='text-center'>Please Singup !!!</h2>
