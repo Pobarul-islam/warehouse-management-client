@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Service = ({ service }) => {
-    const { id, name, img, price, description } = service;
+    const { id, name, img, price, description, quantity } = service;
     const navigate = useNavigate();
     const navigateToCheckOutPage = id => {
         navigate(`/checkout/ ${id}`)
@@ -15,8 +15,9 @@ const Service = ({ service }) => {
             <img className='w-50' src={img} alt="" />
             <h2>{name}</h2>
             <p>{price}</p>
+            
             <p className=''><small>{description}</small></p>
-            <button onClick={() => navigateToCheckOutPage(id)} className='btn btn-primary'>Buy Now</button>
+            <button onClick={() => navigateToCheckOutPage(id)} className='btn btn-primary'>Stock Available</button>
         </div>
     );
 };
