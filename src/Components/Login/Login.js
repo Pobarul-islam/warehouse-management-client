@@ -30,9 +30,7 @@ const Login = () => {
     if (user) {
         navigate('/services');
     }
-    if (user == password) {
-      error('not match')
-  }
+  
 
     const handleUserSignIn = event => {
         event.preventDefault();
@@ -70,7 +68,7 @@ const Login = () => {
                     Login
                 </Button>
                 
-
+                     <p style={{ color: 'red' }}>{error?.message}</p>
             
             </Form>
             New to Stock Watches ? <Link className='text-decoration-none' to="/singup">Please Create an account !!</Link>

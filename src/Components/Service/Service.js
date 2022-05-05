@@ -9,16 +9,20 @@ const Service = ({ service }) => {
     const navigateToCheckOutPage = id => {
         navigate(`/checkout/ ${id}`)
     }
-    
+
     return (
         <div className='watches'>
             <img className='w-50' src={img} alt="" />
             <h2>{name}</h2>
             <p>{price}</p>
-            
+
             <p className=''><small>{description}</small></p>
+
             <button onClick={() => navigateToCheckOutPage(id)} className='btn btn-primary'>Stock Available</button>
+
+
         </div>
+
     );
 };
 

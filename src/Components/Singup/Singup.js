@@ -72,7 +72,7 @@ const Singup = () => {
                 </Button>
                 <p style={{color:"red"}}>{ error}</p>
             </Form>
-            Already have an account ? <Link className='text-decoration-none' to="/login">Please Login</Link>
+            Already have an account ? <Link className='text-decoration' to="/login">Please Login</Link>
         </div>
     );
 };
