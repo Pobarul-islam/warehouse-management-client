@@ -8,6 +8,7 @@ import Login from './Components/Login/Login';
 import Singup from './Components/Singup/Singup';
 import Services from './Components/Pages/StockWatches/StockWatches';
 import NotFound from './Components/NotFound/NotFound';
+import Blogs from './Components/Blogs/Blogs';
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/singup' element={<Singup></Singup>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/footer' element={<Footer></Footer>}></Route>
         <Route path= "*" element={<NotFound></NotFound>}></Route>
 
