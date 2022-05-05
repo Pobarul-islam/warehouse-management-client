@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import './Singup.css'
+import SocialLogin from '../Login/SocialLogin/SocialLogin';
 
 const Singup = () => {
     const [email, setEmail] = useState('');
@@ -73,6 +74,7 @@ const Singup = () => {
                 <p style={{color:"red"}}>{ error}</p>
             </Form>
             Already have an account ? <Link className='text-decoration' to="/login">Please Login</Link>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

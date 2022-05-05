@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Service = ({ service }) => {
-    const { id, name, img, price, description, quantity } = service;
+    const { id, name, img, price, description, quantity, suppllyer } = service;
     const navigate = useNavigate();
     const navigateToCheckOutPage = id => {
         navigate(`/checkout/ ${id}`)
@@ -14,7 +14,9 @@ const Service = ({ service }) => {
         <div className='watches'>
             <img className='w-50' src={img} alt="" />
             <h2>{name}</h2>
-            <p>{price}</p>
+            <p>Price: {price}</p>
+            <p>Quantity: {quantity}</p>
+            <p>Supplayer: { suppllyer}</p>
 
             <p className=''><small>{description}</small></p>
 
