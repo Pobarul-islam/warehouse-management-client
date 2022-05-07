@@ -11,6 +11,7 @@ import NotFound from './Components/NotFound/NotFound';
 import Blogs from './Components/Blogs/Blogs';
 import ProtectedInventor from './Components/ProtectedInventor/ProtectedInventor';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
+import About from './Components/About/About';
 
 
 
@@ -31,11 +32,15 @@ function App() {
           </RequireAuth>
 
         }></Route>
+
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+
+        <Route path='/protectedInventor' element={<ProtectedInventor></ProtectedInventor>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
+        <Route path='/footer' element={<Footer></Footer>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/singup' element={<Singup></Singup>}></Route>
-        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
-        <Route path='/protectedInventor' element={<ProtectedInventor></ProtectedInventor>}></Route>
-        <Route path='/footer' element={<Footer></Footer>}></Route>
+
         <Route path="*" element={<NotFound></NotFound>}></Route>
 
 

@@ -22,7 +22,7 @@ const Service = ({ service }) => {
 
             {/* <button onClick={() => navigateToCheckOutPage(id)} className='btn btn-primary'>Stock Available</button> */}
             <Link to="/services">
-                <button>Click Me</button>
+                <button className='btn btn-primary'>Update</button>
             </Link>
 
         </div>
