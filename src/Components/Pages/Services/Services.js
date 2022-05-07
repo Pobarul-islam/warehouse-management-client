@@ -6,9 +6,11 @@ import './Services.css';
 const Services = () => {
     // const [service, setService] = useProducts();
     const [service, setService] = useState([]);
-    fetch('http://localhost:5000/service')
-        .then(res => res.json())
-        .then(data => setService(data))
+    useEffect(() => {
+        fetch('http://localhost:5000/service')
+            .then(res => res.json())
+            .then(data => setService(data))
+    }, [])
 
 
 
