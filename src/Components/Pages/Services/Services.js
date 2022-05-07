@@ -5,7 +5,6 @@ import './Services.css';
 
 const Services = () => {
     const [service, setService] = useProducts();
-    // const [service, setService] = useState([]);
 
 
 

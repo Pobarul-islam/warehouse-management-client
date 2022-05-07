@@ -1,6 +1,6 @@
 import React from 'react';
 import './Service.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Service = ({ service }) => {
@@ -16,14 +16,17 @@ const Service = ({ service }) => {
             <h2>{name}</h2>
             <p>Price: {price}</p>
             <p>Quantity: {quantity}</p>
-            <p>Supplayer: { suppllyer}</p>
+            <p>Supplayer: {suppllyer}</p>
 
             <p className=''><small>{description}</small></p>
 
-            <button onClick={() => navigateToCheckOutPage(id)} className='btn btn-primary'>Stock Available</button>
-
+            {/* <button onClick={() => navigateToCheckOutPage(id)} className='btn btn-primary'>Stock Available</button> */}
+            <Link to="/services">
+                <button>Click Me</button>
+            </Link>
 
         </div>
+
 
     );
 };

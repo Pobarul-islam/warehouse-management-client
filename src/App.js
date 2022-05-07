@@ -9,7 +9,8 @@ import Singup from './Components/Singup/Singup';
 import Services from './Components/Pages/Services/Services';
 import NotFound from './Components/NotFound/NotFound';
 import Blogs from './Components/Blogs/Blogs';
-import ManageInventory from './Components/ManageInventory/ManageInventory';
+import ProtectedInventor from './Components/ProtectedInventor/ProtectedInventor';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
 
 
 
@@ -24,11 +25,16 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
 
-        <Route path='/services' element={<Services></Services>}></Route>
+        <Route path='/services' element={
+          <RequireAuth>
+            <Services></Services>
+          </RequireAuth>
+
+        }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/singup' element={<Singup></Singup>}></Route>
-        <Route path='/manageinventory' element={<ManageInventory></ManageInventory>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/protectedInventor' element={<ProtectedInventor></ProtectedInventor>}></Route>
         <Route path='/footer' element={<Footer></Footer>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
 
