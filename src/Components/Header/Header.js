@@ -30,7 +30,7 @@ const Header = () => {
 
                             {
                                 user ?
-                                    <Nav.Link as={Link} to="/about">Manage Item</Nav.Link>
+                                    <Nav.Link as={Link} to="/manageInventory">Manage Item</Nav.Link>
 
                                     :
                                     <Nav.Link as={Link} to="/services">Inventory</Nav.Link>
@@ -38,7 +38,7 @@ const Header = () => {
 
                             {
                                 user ?
-                                    <Nav.Link as={Link} to="">Add Items</Nav.Link>
+                                    <Nav.Link as={Link} to="/additems">Add Items</Nav.Link>
                                     :
                                     <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
 
@@ -46,7 +46,7 @@ const Header = () => {
 
                             {
                                 user ?
-                                    <Nav.Link as={Link} to="">My Items</Nav.Link>
+                                    <Nav.Link as={Link} to="/myitems">My Items</Nav.Link>
 
                                     :
                                     <Nav.Link as={Link} to="/about">About</Nav.Link>

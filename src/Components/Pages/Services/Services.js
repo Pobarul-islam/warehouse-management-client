@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import useProducts from '../../hooks/useProducts';
 import Service from '../../Service/Service';
 import './Services.css';
 
 const Services = () => {
-    const [service, setService] = useProducts();
+    // const [service, setService] = useProducts();
+    const [service, setService] = useState([]);
+    fetch('http://localhost:5000/service')
+        .then(res => res.json())
+        .then(data => setService(data))
+
 
 
 
@@ -16,7 +20,7 @@ const Services = () => {
             <div className='services-container container'>
                 {
                     service.map(service => <Service
-                        key={service.id}
+                        key={service._id}
                         service={service}
 
                     ></Service>)

@@ -12,6 +12,9 @@ import Blogs from './Components/Blogs/Blogs';
 import ProtectedInventor from './Components/ProtectedInventor/ProtectedInventor';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import About from './Components/About/About';
+import ManageInventory from './Components/ManageInventory/ManageInventory';
+import MyItems from './Components/MyItems/MyItems';
+import AddItems from './Components/AddItems/AddItems';
 
 
 
@@ -36,6 +39,9 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
 
         <Route path='/protectedInventor' element={<ProtectedInventor></ProtectedInventor>}></Route>
+        <Route path='/manageInventory' element={<ManageInventory></ManageInventory>}></Route>
+        <Route path='/myitems' element={<MyItems></MyItems>}></Route>
+        <Route path='/additems' element={<AddItems></AddItems>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/footer' element={<Footer></Footer>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>

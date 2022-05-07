@@ -4,7 +4,6 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css';
-import SocialLogin from './SocialLogin/SocialLogin';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -19,7 +18,7 @@ const Login = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location.state?.from?.pathname || '/';
+    const from = location.state?.from?.pathname || '/services';
 
     const handleEmailBlur = event => {
         setEmail(event.target.value);
