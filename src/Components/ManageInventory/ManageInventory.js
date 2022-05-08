@@ -1,6 +1,9 @@
 import useServices from '../About/hooks2/UseService';
+import './ManageInventory.css';
 
 const ManageInventory = () => {
+
+
     const [service, setService] = useServices([]);
 
     const handleDelete = id => {
@@ -19,15 +22,40 @@ const ManageInventory = () => {
         }
     }
 
+
+
+
     return (
-        <div className='mt-5 w-50 mx-auto'>
-            <h2>This is Manage Inventory Page</h2>
+
+
+        <div className='mt-5 container  productDelete'>
+
 
             {
+
                 service.map(service => <div key={service._id}>
-                    <h5>{service.name} <button onClick={() => handleDelete(service._id)}>X</button></h5>
+                    <div className=''>
+
+                        <div className=' p-5 col-10 '>
+
+                            <img className='w-50' src={service.img} alt="" />
+                            <h2>{service.name}</h2>
+                            <p>Price: {service.price}</p>
+                            <p>Quantity: {service.quantity}</p>
+                            <p>Supplayer: {service.suppllyer}</p>
+
+                        </div>
+                        {/* <div className='col-2 deletebtn'>
+                            <button className='btn btn-primary'>Delete</button>
+                        </div> */}
+
+                        <div>
+                            <h5 className='btn btn-primary'>{ } <button className='btn text-white' onClick={() => handleDelete(service._id)}>Delete</button></h5>
+                        </div>
+                    </div>
                 </div>)
             }
+
         </div>
     );
 };
