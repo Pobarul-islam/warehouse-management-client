@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import SingleProducts from './Components/SingleProducts/SingleProducts';
 import UseUsers from './hooks/UseUsers';
 
+
 const Inventory = () => {
     const allProducts = UseUsers('http://localhost:5000/service')
-    console.log(allProducts)
+    // console.log(allProducts)
+
     return (
 
         <div className='container mt-5 mb-3'>

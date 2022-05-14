@@ -15,7 +15,7 @@ const SingleProducts = ({ user }) => {
 
                         <p>{description}</p>
                     </Card.Text>
-                    <Link to={`/inventory/:id/ ${_id}`} className='btn btn-primary'>Order Now</Link>
+                    <Link to={`/user/${_id}`} className='btn btn-primary'>Order Now</Link>
                 </Card.Body>
             </Card>
         </div>

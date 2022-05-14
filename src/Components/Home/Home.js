@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     const usersData = UseUsers('http://localhost:5000/service')
+    // console.log(usersData)
     if (usersData.length) {
         usersData.length = 6;
     }
@@ -31,7 +32,7 @@ const Home = () => {
 
 
             <div className='container mt-5 mb-3'>
-                <h1 className='text-center'>Our Watches {usersData.length}</h1>
+                <h1 className='text-center'>Our Watches</h1>
                 <div className='row'>
                     {
                         usersData?.map(user => <SingleProducts key={user.id} user={user}></SingleProducts>)
