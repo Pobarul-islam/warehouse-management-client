@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import UseUsers from '../../hooks/UseUsers';
-// import SingleProducts from '../SingleProducts/SingleProducts';
+
 
 const ProductInfo = () => {
-    let userid = useParams();
-    // console.log(userid)
+    let { userid } = useParams();
+    const [service, setService] = useState({})
+    useEffect(() => {
+        const url = (`http://localhost:5000/service/${userid}`)
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setService(data))
+    }, [])
 
-    const allUsers = UseUsers(`http://localhost:5000/service}`)
-    // console.log(allUsers[0])
+
     return (
         <div>
+            <h1>Name:</h1>
 
 
         </div>

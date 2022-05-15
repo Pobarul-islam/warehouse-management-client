@@ -28,7 +28,7 @@ const Singup = () => {
     }
 
     if (user) {
-        navigate('/services')
+        navigate('/inventory/:id')
     }
     const handleCreateUser = event => {
         event.preventDefault();
@@ -46,32 +46,32 @@ const Singup = () => {
     }
 
 
-    
+
     return (
         <div className='singup-form mx-auto'>
-            <h2 className='text-center'>Please Singup !!!</h2>
+            <h2 className='text-center'>Please Register !!!</h2>
 
             <Form onSubmit={handleCreateUser} className='card p-5'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    
-                    <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" required/>
+
+                    <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" required />
 
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-            
-                    <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" required/>
+
+                    <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                  
+
                     <Form.Control onBlur={handleConfirmPassword} type="password" placeholder="Confirm Password" required />
                 </Form.Group>
 
                 <Button className='form-submit' variant="primary" type="submit">
                     Singup
                 </Button>
-                <p style={{color:"red"}}>{ error}</p>
+                <p style={{ color: "red" }}>{error}</p>
             </Form>
             Already have an account ? <Link className='text-decoration' to="/login">Please Login</Link>
             <SocialLogin></SocialLogin>

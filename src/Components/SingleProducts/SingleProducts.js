@@ -10,10 +10,10 @@ const SingleProducts = ({ user }) => {
             <Card className='shadow-lg p-3 mb-5 bg-white rounded' style={{ width: '18rem' }}>
                 <Card.Img className='w-50' variant="top" src={img} />
                 <Card.Body>
-                    <Card.Title> {name}</Card.Title>
+                    <Card.Title>Name: {name}</Card.Title>
                     <Card.Text>
 
-                        <p>{description}</p>
+                        <p>Description: {description}</p>
                     </Card.Text>
                     <Link to={`/user/${_id}`} className='btn btn-primary'>Order Now</Link>
                 </Card.Body>

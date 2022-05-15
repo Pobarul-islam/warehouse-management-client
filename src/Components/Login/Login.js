@@ -18,7 +18,7 @@ const Login = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location.state?.from?.pathname || '/services';
+    const from = location.state?.from?.pathname || '/inventory/:id';
 
     const handleEmailBlur = event => {
         setEmail(event.target.value);
@@ -46,7 +46,7 @@ const Login = () => {
 
 
 
-            <Form onSubmit={handleUserSignIn} className='card p-5'>
+            <Form onSubmit={handleUserSignIn} className='card p-5 mx-auto'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
 
                     <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" required />
@@ -72,7 +72,9 @@ const Login = () => {
                 <p style={{ color: 'red' }}>{error?.message}</p>
 
             </Form>
-            New to Stock Watches ? <Link className='text-decoration-none' to="/singup">Please Create an account !!</Link>
+            <div className='text-center'>
+                New to Stock Watches ? <Link className='text-decoration-none' to="/singup">Please Create an account !!</Link>
+            </div>
 
         </div>
     );
