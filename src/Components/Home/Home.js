@@ -3,14 +3,16 @@ import './Home.css';
 import banner from '../../img/main-banner.jpg';
 import UseUsers from '../../hooks/UseUsers';
 import SingleProducts from '../SingleProducts/SingleProducts';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 
-const Home = () => {
+const Home = ({ user }) => {
     const usersData = UseUsers('http://localhost:5000/service')
     // console.log(usersData)
     if (usersData.length) {
         usersData.length = 6;
     }
+
+
     // console.log(usersData)
     return (
         <div>
@@ -37,11 +39,13 @@ const Home = () => {
                     {
                         usersData?.map(user => <SingleProducts key={user.id} user={user}></SingleProducts>)
 
+
                     }
 
 
                 </div>
-                <Link className='btn btn-primary' to="/inventory/:id">Update</Link>
+                <Link id='updatebtn' className='btn btn-primary' to="/inventory/:id">Update</Link>
+
             </div>
 
 

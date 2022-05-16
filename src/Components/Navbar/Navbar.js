@@ -25,13 +25,13 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <CoustomLink className="nav-link active" aria-current="page" to="/home">Home</CoustomLink>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <CoustomLink className="nav-link" to="/inventory/:id">Inventory</CoustomLink>
-                            </li>
+                            </li> */}
 
                             <li className='nav-item'>
 
-                                <CoustomLink className='nav-link' to="/manageinventory">ManageInventory </CoustomLink>
+                                <CoustomLink className='nav-link' to="/inventory/:id">ManageInventory </CoustomLink>
 
 
                             </li>
@@ -39,7 +39,7 @@ const Navbar = () => {
 
                                 {
                                     user ?
-                                        <CoustomLink className='nav-link' to="">ManageItem </CoustomLink>
+                                        <CoustomLink className='nav-link' to="4">ManageItem </CoustomLink>
                                         :
                                         <CoustomLink className='nav-link' to="/blogs">Blogs </CoustomLink>
                                 }
@@ -63,7 +63,7 @@ const Navbar = () => {
                                 {
                                     user ?
 
-                                        <CoustomLink className='nav-link' to="">MyItems</CoustomLink>
+                                        <CoustomLink className='nav-link' to="5">MyItems</CoustomLink>
                                         :
                                         <CoustomLink className='nav-link' to="/about"></CoustomLink>
                                 }
