@@ -12,6 +12,8 @@ const SingleProducts = ({ user }) => {
                 <Card.Body>
                     <Card.Title>Name: {name}</Card.Title>
                     <Card.Text>
+                        <p>Price: {price} <br /> Quantity:  {quantity} <br /> Suppllyer: {suppllyer}</p>
+
 
                         <p>Description: {description}</p>
                     </Card.Text>

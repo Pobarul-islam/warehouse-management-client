@@ -11,7 +11,7 @@ const Inventory = () => {
     return (
 
         <div className='container mt-5 mb-3'>
-            <h1 className='text-center'>Our Watches {allProducts.length}</h1>
+            <h1 className='text-center'>Our Watches</h1>
             <div className='row'>
                 {
                     allProducts?.map(user => <SingleProducts key={user.id} user={user}></SingleProducts>)
