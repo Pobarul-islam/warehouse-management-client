@@ -32,9 +32,6 @@ const Login = () => {
         navigate(from, { replace: true });
     }
 
-    if (user) {
-        navigate('/inventory/:id')
-    }
 
     const handleUserSignIn = event => {
         event.preventDefault();

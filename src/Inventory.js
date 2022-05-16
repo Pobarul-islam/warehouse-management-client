@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import SingleProducts from './Components/SingleProducts/SingleProducts';
 import UseUsers from './hooks/UseUsers';
 
