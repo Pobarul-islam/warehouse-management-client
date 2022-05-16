@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import SingleProducts from './Components/SingleProducts/SingleProducts';
 import UseUsers from './hooks/UseUsers';
 
@@ -15,8 +16,8 @@ const Inventory = () => {
                 {
                     allProducts?.map(user => <SingleProducts key={user.id} user={user}></SingleProducts>)
 
-                }
 
+                }
 
             </div>
 

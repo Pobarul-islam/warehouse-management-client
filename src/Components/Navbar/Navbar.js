@@ -31,7 +31,7 @@ const Navbar = () => {
 
                             <li className='nav-item'>
 
-                                <CoustomLink className='nav-link' to="/inventory/:id">ManageInventory </CoustomLink>
+                                <CoustomLink className='nav-link' to="/inventory/:id">Inventory </CoustomLink>
 
 
                             </li>
@@ -57,8 +57,9 @@ const Navbar = () => {
                                 }
 
 
-                            </li>
 
+                            </li>
+                            <CoustomLink className='nav-link' to="/contact"> Contact</CoustomLink>
                             <li>
                                 {
                                     user ?

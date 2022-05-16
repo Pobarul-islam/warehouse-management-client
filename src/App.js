@@ -2,7 +2,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-// import Inventory from './Inventory';
 import Home from './Components/Home/Home';
 import Blog from './Components/Blogs/Blogs';
 import About from './Components/About/About';
@@ -13,6 +12,8 @@ import ProductInfo from './Components/ProductInfo/ProductInfo';
 import Singup from './Components/Singup/Singup';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import ManageInventory from './Components/ManageInventory/ManageInventory';
+import Inventory from './Inventory';
+import Contact from './Components/Contact/Contact';
 
 
 
@@ -29,7 +30,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/inventory/:id' element={
           <RequireAuth>
-            <ManageInventory></ManageInventory>
+            <Inventory></Inventory>
           </RequireAuth>
         }></Route>
 
@@ -41,12 +42,13 @@ function App() {
           </RequireAuth>
         }></Route>
 
+        <Route path='contact' element={<Contact></Contact>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/singup' element={<Singup></Singup>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
-      <Footer></Footer>
+
     </div>
   );
 }

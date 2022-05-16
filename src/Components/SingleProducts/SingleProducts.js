@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const SingleProducts = ({ user }) => {
@@ -17,7 +17,8 @@ const SingleProducts = ({ user }) => {
 
                         <p>Description: {description}</p>
                     </Card.Text>
-                    <Link to={`/user/${_id}`} className='btn btn-primary'>Order Now</Link>
+                    <Link to={`/user/${_id}`} className='btn btn-primary'>Update</Link>
+
                 </Card.Body>
             </Card>
         </div>
