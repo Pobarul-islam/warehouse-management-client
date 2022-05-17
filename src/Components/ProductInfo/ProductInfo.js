@@ -15,7 +15,8 @@ const ProductInfo = () => {
 
     return (
         <div>
-            <h1>Name:</h1>
+            <h1>Name:{service.name}</h1>
+            <p>{service.description}</p>
 
 
         </div>

@@ -13,6 +13,7 @@ import RequireAuth from './Components/RequireAuth/RequireAuth';
 // import ManageInventory from './Components/ManageInventory/ManageInventory';
 import Inventory from './Components/Inventory/Inventory';
 import Contact from './Components/Contact/Contact';
+import UpdateProducts from './Components/UpdateProducts/UpdateProducts';
 
 
 
@@ -42,6 +43,7 @@ function App() {
         }></Route>
 
         <Route path='contact' element={<Contact></Contact>}></Route>
+        <Route path='update/:id' element={<UpdateProducts></UpdateProducts>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/singup' element={<Singup></Singup>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

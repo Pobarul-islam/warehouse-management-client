@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Rolex",
+        "img": "https://i.ibb.co/vQsjrRN/watch-7.jpg",
+        "price": "$ 300",
+        "quantity": "10",
+        "suppllyer": "Rofiq",
+        "description": "The name on a watch dial can tell you a lot. It might represent a range of intangible qualities, from history."
+    },
+    {
+        "name": "Seiko",
+        "img": "https://i.ibb.co/QJhYKJB/watch-8.jpg",
+        "price": "$ 100",
+        "quantity": "14",
+        "suppllyer": "Abul",
+        "description": "Internationally, Seiko was long associated with affordable but reliable everyman watches"
+    },
+    {
+        "name": "Patek Philippe",
+        "img": "https://i.ibb.co/D4BCsj1/watch-3.jpg",
+        "price": "$ 150",
+        "quantity": "4",
+        "suppllyer": "Kabul",
+        "description": "Alongside Rolex, Patek Philippe is widely regarded as one of the most prestigious and collectible names in watches."
+    },
+    {
+        "name": "Cartier",
+        "img": "https://i.ibb.co/wh2Mfbf/watch-4.jpg",
+        "price": "$ 300",
+        "quantity": "13",
+        "suppllyer": "Sabul",
+        "description": "Cartier is sometimes thought of first as a jeweler, but it's also one of the most important historical watchmakers in the world. "
+    },
+    {
+        "name": "Apple",
+        "img": "https://i.ibb.co/TTb7hfs/watch-5.jpg",
+        "price": "$ 100",
+        "quantity": "5",
+        "suppllyer": "Rahim",
+        "description": "The technology company is, like it or not, a major presence in the watch industry. "
+    },
+    {
+        "name": "Omega",
+        "img": "https://i.ibb.co/VvwshX2/watch-6.jpg",
+        "price": "$ 150",
+        "quantity": "10",
+        "suppllyer": "Karim",
+        "description": "From the moon landings to James Bond to its role as the Olympics' official timekeeper."
+    },
+    {
+        "name": "Rolex",
+        "img": "https://i.ibb.co/vQsjrRN/watch-7.jpg",
+        "price": "$ 300",
+        "quantity": "10",
+        "suppllyer": "Rofiq",
+        "description": "The name on a watch dial can tell you a lot. It might represent a range of intangible qualities, from history."
+    },
+    {
+        "name": "Seiko",
+        "img": "https://i.ibb.co/QJhYKJB/watch-8.jpg",
+        "price": "$ 100",
+        "quantity": "14",
+        "suppllyer": "Abul",
+        "description": "Internationally, Seiko was long associated with affordable but reliable everyman watches"
+    },
+    {
+        "name": "Patek Philippe",
+        "img": "https://i.ibb.co/D4BCsj1/watch-3.jpg",
+        "price": "$ 150",
+        "quantity": "4",
+        "suppllyer": "Kabul",
+        "description": "Alongside Rolex, Patek Philippe is widely regarded as one of the most prestigious and collectible names in watches."
+    },
+    {
+        "name": "Cartier",
+        "img": "https://i.ibb.co/wh2Mfbf/watch-4.jpg",
+        "price": "$ 300",
+        "quantity": "13",
+        "suppllyer": "Sabul",
+        "description": "Cartier is sometimes thought of first as a jeweler, but it's also one of the most important historical watchmakers in the world. "
+    },
+    {
+        "name": "Apple",
+        "img": "https://i.ibb.co/TTb7hfs/watch-5.jpg",
+        "price": "$ 100",
+        "quantity": "5",
+        "suppllyer": "Rahim",
+        "description": "The technology company is, like it or not, a major presence in the watch industry. "
+    },
+    {
+        "name": "Omega",
+        "img": "https://i.ibb.co/VvwshX2/watch-6.jpg",
+        "price": "$ 150",
+        "quantity": "10",
+        "suppllyer": "Karim",
+        "description": "From the moon landings to James Bond to its role as the Olympics' official timekeeper."
+    }
+]
