@@ -3,7 +3,7 @@ import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useUsers from '../../hooks/UseUsers';
 
-const ProtectedInventor = ({ user }) => {
+const ProtectedInventor = ({ user, handleControl }) => {
     // console.log(user)
     const { _id, name, img, price, description, quantity, suppllyer } = user || {};
     const handleProductDelete = id => {
@@ -18,7 +18,8 @@ const ProtectedInventor = ({ user }) => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount > 0) {
-                        console.log('deleted')
+                        console.log('deleted');
+                        handleControl();
                         const remaining = useUsers.filter(user => user._id !== id);
                     }
                 })

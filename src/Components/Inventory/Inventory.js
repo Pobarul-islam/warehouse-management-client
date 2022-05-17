@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import SingleProducts from '../SingleProducts/SingleProducts';
 import UseUsers from '../../hooks/UseUsers';
@@ -6,7 +6,17 @@ import ProtectedInventor from '../ProtectedInventor/ProtectedInventor';
 
 
 const Inventory = () => {
-    const allProducts = UseUsers('http://localhost:5000/service')
+    const [control, setControl] = useState(true);
+    const handleControl = (event) => {
+        setControl(!control);
+    }
+    // const allProducts = UseUsers('http://localhost:5000/service')
+    const [allProducts, setAllProducts] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/service')
+            .then(res => res.json())
+            .then(data => setAllProducts(data));
+    }, [control]);
     // console.log(allProducts)
 
     return (
@@ -15,7 +25,8 @@ const Inventory = () => {
             <h1 className='text-center'>Our Watches {allProducts.length}</h1>
             <div className='row'>
                 {
-                    allProducts?.map(user => <ProtectedInventor key={user.id} user={user}></ProtectedInventor>)
+                    allProducts?.map(user => <ProtectedInventor key={user.id} handleControl={handleControl} user={user}></ProtectedInventor>)
+
 
 
                 }
