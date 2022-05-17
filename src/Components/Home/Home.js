@@ -3,6 +3,7 @@ import './Home.css';
 import banner from '../../img/main-banner.jpg';
 import UseUsers from '../../hooks/UseUsers';
 import SingleProducts from '../SingleProducts/SingleProducts';
+import Footer from '../Footer/Footer';
 import { Link, Navigate } from 'react-router-dom';
 
 const Home = ({ user }) => {
@@ -44,10 +45,10 @@ const Home = ({ user }) => {
 
 
                 </div>
-                <Link id='updatebtn' className='btn btn-primary' to="/inventory/:id">Update</Link>
+
 
             </div>
-
+            <Footer></Footer>
 
         </div>
 

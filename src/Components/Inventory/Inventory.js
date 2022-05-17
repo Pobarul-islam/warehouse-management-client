@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import SingleProducts from './Components/SingleProducts/SingleProducts';
-import UseUsers from './hooks/UseUsers';
+import SingleProducts from '../SingleProducts/SingleProducts';
+import UseUsers from '../../hooks/UseUsers';
+import ProtectedInventor from '../ProtectedInventor/ProtectedInventor';
 
 
 const Inventory = () => {
@@ -14,7 +15,7 @@ const Inventory = () => {
             <h1 className='text-center'>Our Watches</h1>
             <div className='row'>
                 {
-                    allProducts?.map(user => <SingleProducts key={user.id} user={user}></SingleProducts>)
+                    allProducts?.map(user => <ProtectedInventor key={user.id} user={user}></ProtectedInventor>)
 
 
                 }

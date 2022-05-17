@@ -6,13 +6,12 @@ import Home from './Components/Home/Home';
 import Blog from './Components/Blogs/Blogs';
 import About from './Components/About/About';
 import Login from './Components/Login/Login';
-import Footer from './Components/Footer/Footer';
 import NotFound from './Components/NotFound/NotFound';
 import ProductInfo from './Components/ProductInfo/ProductInfo';
 import Singup from './Components/Singup/Singup';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
-import ManageInventory from './Components/ManageInventory/ManageInventory';
-import Inventory from './Inventory';
+// import ManageInventory from './Components/ManageInventory/ManageInventory';
+import Inventory from './Components/Inventory/Inventory';
 import Contact from './Components/Contact/Contact';
 
 
