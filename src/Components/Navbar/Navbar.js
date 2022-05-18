@@ -37,37 +37,22 @@ const Navbar = () => {
                             </li>
                             <li className='nav-item'>
 
-                                {
-                                    user ?
-                                        <CoustomLink className='nav-link' to="4">ManageItem </CoustomLink>
-                                        :
-                                        <CoustomLink className='nav-link' to="/blogs">Blogs </CoustomLink>
-                                }
+
+                                <CoustomLink className='nav-link' to="/blogs">Blogs </CoustomLink>
+
 
 
                             </li>
                             <li className='nav-item'>
 
-                                {
-                                    user ?
-
-                                        <CoustomLink className='nav-link' to="/additems">AddItem </CoustomLink>
-                                        :
-                                        <CoustomLink className='nav-link' to="/about"> About</CoustomLink>
-                                }
-
-
+                                <CoustomLink className='nav-link' to="/about"> About</CoustomLink>
 
                             </li>
 
                             <li>
-                                {
-                                    user ?
 
-                                        <CoustomLink className='nav-link' to="5">MyItems</CoustomLink>
-                                        :
-                                        <CoustomLink className='nav-link' to="/about"></CoustomLink>
-                                }
+                                <CoustomLink className='nav-link' to="/about"></CoustomLink>
+
                             </li>
                             <li>
                                 <CoustomLink className='nav-link' to="/contact"> Contact</CoustomLink>
@@ -82,6 +67,25 @@ const Navbar = () => {
                         <ul className='navbar-nav'>
 
 
+                            {
+                                user && <>
+                                    <li className='nav-item'>
+
+                                        <CoustomLink className='nav-link' to="/manageitem"> ManageItem</CoustomLink>
+
+                                    </li>
+                                    <li className='nav-item'>
+
+                                        <CoustomLink className='nav-link' to="/additems"> AddItem</CoustomLink>
+
+                                    </li>
+                                    <li className='nav-item'>
+
+                                        <CoustomLink className='nav-link' to="/myitem"> MyItems</CoustomLink>
+
+                                    </li>
+                                </>
+                            }
 
                             <li className='nav-item'>
                                 {
@@ -95,6 +99,7 @@ const Navbar = () => {
                                 }
 
                             </li>
+
 
 
                         </ul>
