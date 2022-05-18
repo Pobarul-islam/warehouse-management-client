@@ -43,7 +43,11 @@ function App() {
         <Route path='/manageinventory' element={<ManageInventory></ManageInventory>}></Route>
 
         <Route path='contact' element={<Contact></Contact>}></Route>
-        <Route path='update/:id' element={<UpdateProducts></UpdateProducts>}></Route>
+        <Route path='update/:id' element={
+          <RequireAuth>
+            <UpdateProducts></UpdateProducts>
+          </RequireAuth>
+        }></Route>
         <Route path='/manageitem' element={
           <RequireAuth>
             <ManageItem></ManageItem>

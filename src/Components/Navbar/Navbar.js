@@ -49,11 +49,7 @@ const Navbar = () => {
 
                             </li>
 
-                            <li>
 
-                                <CoustomLink className='nav-link' to="/about"></CoustomLink>
-
-                            </li>
                             <li>
                                 <CoustomLink className='nav-link' to="/contact"> Contact</CoustomLink>
                             </li>
