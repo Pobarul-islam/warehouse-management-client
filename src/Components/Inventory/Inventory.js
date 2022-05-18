@@ -8,7 +8,6 @@ const Inventory = () => {
     const handleControl = (event) => {
         setControl(!control);
     }
-    // const allProducts = UseUsers('http://localhost:5000/service')
     const [allProducts, setAllProducts] = useState([]);
     useEffect(() => {
         fetch('http://localhost:5000/service')
