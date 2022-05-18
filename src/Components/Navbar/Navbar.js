@@ -51,7 +51,7 @@ const Navbar = () => {
                                 {
                                     user ?
 
-                                        <CoustomLink className='nav-link' to="/about">AddItem </CoustomLink>
+                                        <CoustomLink className='nav-link' to="/additems">AddItem </CoustomLink>
                                         :
                                         <CoustomLink className='nav-link' to="/about"> About</CoustomLink>
                                 }
@@ -59,7 +59,7 @@ const Navbar = () => {
 
 
                             </li>
-                            <CoustomLink className='nav-link' to="/contact"> Contact</CoustomLink>
+
                             <li>
                                 {
                                     user ?
@@ -68,6 +68,9 @@ const Navbar = () => {
                                         :
                                         <CoustomLink className='nav-link' to="/about"></CoustomLink>
                                 }
+                            </li>
+                            <li>
+                                <CoustomLink className='nav-link' to="/contact"> Contact</CoustomLink>
                             </li>
 
                         </ul>

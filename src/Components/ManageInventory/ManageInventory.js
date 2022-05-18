@@ -3,7 +3,7 @@ import React from 'react';
 const ManageInventory = () => {
     return (
         <div>
-            <h2>ManageInventory Page</h2>
+            <h2>manageInventory</h2>
         </div>
     );
 };

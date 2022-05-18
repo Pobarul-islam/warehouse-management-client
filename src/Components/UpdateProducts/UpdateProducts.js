@@ -5,23 +5,30 @@ import { Link, useParams } from 'react-router-dom';
 const UpdateProducts = () => {
     const { id } = useParams();
     const [product, setProduct] = useState({});
+
     useEffect(() => {
         const url = `http://localhost:5000/service/${id}`
         fetch(url)
             .then(res => res.json())
-            .then(data => setProduct(data));
+            .then(data => console.log(data))
+        // console.log(setProduct)
     }, [])
     return (
-        <div >
+        <div>
+            <h2>Single Product {id}</h2>
+
+
             <div className='d-flex justify-content-between container mt-5'>
                 <div className='col-6'>
                     <img className='w-50' src={product.img} alt="" />
                 </div>
                 <div className='col-6'>
-                    <h1>Name: {product.name}</h1>
+                    <h3>Name: {product.name}</h3>
                     <p>Description: {product.description}</p>
-                    <h5>Suppllyer: {product.suppllyer}</h5>
-                    <h5>Price: {product.price}</h5>
+                    <p>Suppllyer: {product.suppllyer}</p>
+
+                    <h5>Suppllyer: {setProduct.suppllyer}</h5>
+                    <h5>Price: {setProduct.price}</h5>
                     <h5>Quantity: {product.quantity}</h5> <br /> <br />
                     <InputGroup className="mb-3 w-75 ms">
                         <FormControl
@@ -42,12 +49,10 @@ const UpdateProducts = () => {
 
 
             </div>
-
-
         </div>
-
-
     );
 };
 
 export default UpdateProducts;
+
+

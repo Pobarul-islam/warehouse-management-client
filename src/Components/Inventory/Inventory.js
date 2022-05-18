@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
-import SingleProducts from '../SingleProducts/SingleProducts';
-import UseUsers from '../../hooks/UseUsers';
 import ProtectedInventor from '../ProtectedInventor/ProtectedInventor';
 
 
@@ -25,7 +23,7 @@ const Inventory = () => {
             <h1 className='text-center'>Our Watches {allProducts.length}</h1>
             <div className='row'>
                 {
-                    allProducts?.map(user => <ProtectedInventor key={user.id} handleControl={handleControl} user={user}></ProtectedInventor>)
+                    allProducts?.map(user => <ProtectedInventor key={user._id} handleControl={handleControl} user={user}></ProtectedInventor>)
 
 
 
