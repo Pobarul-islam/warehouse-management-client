@@ -1,0 +1,132 @@
+.contact-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 5%;
+    margin-top: 70px;
+    justify-content: center;
+    height: 80vh;
+    
+
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.contact-left h1{
+font-size: 52px;
+line-height: 60px;
+color: rgb(39, 37, 53);
+}
+
+.contact-left h5{
+font-size: 18px;
+
+color: rgb(57, 54, 75);
+font-weight: normal;
+margin-top: 15px;
+}
+.mail-icon{
+    padding: 15px;
+    background: rgb(214, 234, 247);
+    display: flex;
+    width: 60px;
+    justify-content: center;
+    border-radius: 10px;
+   
+}
+.mail-icon img{
+    width: 20px;
+}
+.mail{
+    display: flex;
+    padding: 20px 0px;
+    
+}
+.content-mail {
+font-size: 18px;
+line-height: 25px;
+display: flex;
+flex-direction: column;
+margin-left: 14px;
+}
+
+
+
+/* left size styling end here  */
+.contact-form{
+    width: 80%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgb(218, 218, 218);
+    margin-left: 10%;
+    padding: 30px;
+}
+.contact-form h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(27, 27, 27);
+}
+.contact-form input{
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #575656;
+    box-shadow: 0px 0px 3px 0px rgb(212, 209, 209);
+}
+.contact-form h5{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.contact-form textarea{
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    box-shadow: 0px 0px 3px 0px rgb(212, 209, 209);
+    height: 130px;
+    padding: 15px;
+    font-size: 16px;
+
+}
+.contact-form button{
+    background: #C8242F;
+    color: white;
+}
+.contact-form button:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .contact-form{
+        width: 100%;
+        background-color: white;
+        box-shadow: 0px 0px 5px 0px rgb(218, 218, 218);
+        margin-left: 0%;
+        padding: 0px;
+        margin-top: 50px;
+
+    }
+    .contact-section{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin-top: 80px;
+        justify-content: center;
+        height: auto;
+    
+    }
+}
