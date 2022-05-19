@@ -1,58 +1,74 @@
-import React from 'react';
-import { Accordion } from 'react-bootstrap';
-import './Blogs.css';
-
+import React from 'react'
+import './Blogs.css'
 const Blogs = () => {
     return (
-        <div className='blog mx-auto'>
-            <Accordion>
-                <Accordion.Item eventKey="0">
-                    <Accordion.Header><h4>Difference between javascript and node js?</h4></Accordion.Header>
-                    <Accordion.Body>
-                        <p>JavaScript is a client-side scripting language or browser spotting. Client-side scripting language means that the browser will run this script. Unlike the client side, the server side, server side language, all the code is executed / run through the web server.</p>
+        <div className='container mt-5'>
+            
+            <div className="">
+                <div className='mt-4'>
+                    <img className='img-fluid' src="https://cdn.educba.com/academy/wp-content/uploads/2018/07/Java-Script-vs-Node-JS-1.png" alt="" />
+                    <ol className='mt-4'>
+                        <li>
+                            Javascript is used in frontend development but Nodejs is used in server-side development.
 
-                        <p>Node.js is an open source, cross-platform, JavaScript run-time environment compiled into a terminal outside of the browser, primarily used for server-side scripting and command line tools.</p>
-                    </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                    <Accordion.Header><h4>When should you use nodejs and when should you use mongodb ?</h4></Accordion.Header>
-                    <Accordion.Body>
-                        <p>Node.js is fundamentally utilized for non-obstructing, occasion driven servers, because of its single-strung nature. It's utilized for customary sites and back-end API benefits however was planned with ongoing, push-based models at the top of the priority list.</p>
+                        </li>
+                        <li>
+                            Javascript is capable enough to add HTML and play with the DOM but Nodejs does not have capability to add HTML tags.
 
-                        <p>Node.js is fundamentally utilized for non-obstructing, occasion-driven servers, because of its single-strung nature. It's utilized for customary sites and back-end API benefits however was planned with ongoing, push-based models at the top of the priority list.</p>
-                    </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
-            <Accordion>
-                <Accordion.Item eventKey="0">
-                    <Accordion.Header><h4>Differences between SQL and NOSQL database ?</h4></Accordion.Header>
-                    <Accordion.Body>
-                        <p>A SQL Database follows a table like design which can have an
-                            limitless number of lines and each datum present inside the data set
-                            is appropriately organized with Predefined Schemas, it is essentially utilized
-                            to control Relational Databases Management Systems.</p>
-                        
-                        <p>A SQL Database follows a table like design which can have an
-                            limitless number of lines and each datum present inside the data set
-                            is appropriately organized with Predefined Schemas, it is essentially utilized
-                            to control Relational Databases Management Systems.</p>
-                    </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                    <Accordion.Header><h4>What is the purpose of jwt and how does it work ?</h4></Accordion.Header>
-                    <Accordion.Body>
-                        <p>JWT, or JSON Web Token, is an open standard used to divide security data among two gatherings — a client and a server. Each JWT contains encoded JSON objects, including a bunch of cases. JWTs are marked utilizing a cryptographic calculation to guarantee that the cases can't be modified after the token is given.</p>
+                        </li>
+                        <li>
+                            Javascript can only be run in the browsers and to run JavaScript outside we need help of node.js.
+                        </li>
+                        <li>
+                            Javascript is a programming language that is used for writing scripts on the website but NodeJS is a Javascript runtime environment.
+                        </li>
+                        <li>
+                            Javascript is used on the client-side but node js mostly used on the server-side.
+                        </li>
+                    </ol>
+                </div>
 
-                        <p>A JWT is a Base64URL encoded string, split into three areas, delimited by periods. <br /> <br />
+                <div>
+                    <img className='img-fluid' src="https://uploads.toptal.io/blog/image/956/toptal-blog-image-1426676395222.jpeg" alt="" />
+                    <p>
+                        JWT, or JSON Web Token, is an open standard used to share information between two parties securely — a client and a server. In most cases, it's an encoded JSON containing a set of claims and a signature. It's usually used in the context of other authentication mechanisms like OAuth, OpenID to share user-related information. It's also a popular way to authenticate/authorize users in a microservice architecture.
+                        When it comes to API authentication and server-to-server authorization, JSON web token (JWT) is particularly a useful technology. In terms of Single Sign-On (SSO), it means that a service provider can receive trustworthy information from the authentication server. By sharing a secret key with the Identity Provider, the Service Provider can hash a part of a token it receives and compare it to the signature of the token. Now, if that result matches the signature, the SP knows that the information provided has come from the other entity possessing the key.
+                    </p>
+                </div>
 
-                            Area one is the header. This segment contains JWT metadata; commonly data about the kind of token and the calculation used to sign it. It is encoded JSON.
-                            Area two is the payload. This is the substance of the token and is additionally encoded JSON.
-                            Area three is the mark. This is the SHA256 (or some other HMAC) hash of the encoded header, encoded payload, and confidential. This piece of the JWT is utilized to check the respectability of the message.</p>
-                    </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
+
+                <div className='mt-4'>
+                    <img className='img-fluid' src="https://res.cloudinary.com/practicaldev/image/fetch/s--0QbcuqxC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/mastering-mongoose-for-mongodb-and-node-js-mongoose-diagram-77560014632570f4.png" alt="" />
+                    <p>
+                        NodeJS is a Javascript runtime environment. Nodejs is used in server-side development. It is used to build servers that can respond to web requests, though it can be used for lots of other types of code too.
+                        MongoDB is a database engine. Code within some application or server uses MongoDB to save, query or update data in a database. There are many web servers built with nodejs that will then use MongoDB for storing data.MongoDB offers an API library that runs within a Nodejs application to give you programmatic access to MongoDB so you can create databases and then add, query, update or delete data from the MongoDB database. MongoDB also has API libraries for other programming environments such as Python, Java, etc...
+                        These two technologies are for different parts of a typical web server system. You don't substitute one for the other. Instead, you can use them together.
+                    </p>
+                </div>
+
+                <div className='mt-4'>
+                    <img className='img-fluid' src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191104165821/SQL-Vs-NoSQL1.png" alt="" />
+                    <ol>
+                        <li>SQL databases are relational, NoSQL databases are non-relational.</li>
+                        <li>
+                            SQL databases use structured query language and have a predefined schema. NoSQL databases have dynamic schemas for unstructured data.
+                        </li>
+                        <li>
+                            SQL databases are vertically scalable, while NoSQL databases are horizontally scalable.
+                        </li>
+                        <li>
+                            SQL databases are table-based, while NoSQL databases are document, key-value, graph, or wide-column stores.
+                        </li>
+                        <li>
+                            SQL databases are better for multi-row transactions, while NoSQL is better for unstructured data like documents or JSON.
+                        </li>
+                    </ol>
+                </div>
+
+
+            </div>
         </div>
-    );
-};
+    )
+}
 
-export default Blogs;
+export default Blogs

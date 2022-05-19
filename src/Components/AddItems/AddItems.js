@@ -22,6 +22,7 @@ const AddItems = () => {
 
     };
 
+
     return (
         <div className='w-50 mx-auto'>
             <h2>Add Product</h2>

@@ -3,7 +3,10 @@ import { Button, FormControl, InputGroup } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 
 const UpdateProducts = () => {
+
     const { id } = useParams();
+    const [qty, setQty] = useState(0);
+
     const [product, setProduct] = useState({});
     useEffect(() => {
         const url = `http://localhost:5000/service/${id}`
@@ -11,6 +14,18 @@ const UpdateProducts = () => {
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
+
+
+
+    const additem = (e) => {
+        e.preventDefault()
+        console.log('hello world')
+
+
+    }
+
+
+
 
     return (
         <div>
@@ -34,7 +49,7 @@ const UpdateProducts = () => {
                             aria-label="Recipient's username"
                             aria-describedby="basic-addon2"
                         />
-                        <Button className='btn-primary text-white' variant="outline-secondary" id="button-addon2">
+                        <Button onClick={additem} className='btn-primary text-white' variant="outline-secondary" id="button-addon2">
                             Add
                         </Button>
                     </InputGroup>
