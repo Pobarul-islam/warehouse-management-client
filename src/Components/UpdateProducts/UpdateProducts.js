@@ -25,18 +25,6 @@ const UpdateProducts = () => {
 
     }
 
-    //     fetch(url, {
-    //         method: 'PUT',
-    //         headers: { 'Content-Type': 'application/json' },
-    //         body: JSON.stringify(formData)
-    //     })
-    //         .then(response => response.json())
-    //         .then(json => {
-
-    //             setProduct(product)
-    //         })
-    // }
-
 
 
 
@@ -45,11 +33,12 @@ const UpdateProducts = () => {
 
 
 
-            <div className='d-flex justify-content-between container mt-5'>
-                <div className='col-6'>
-                    <img className='w-50' src={product.img} alt="" />
+
+            <div className='d-flex col-12 justify-content-between container mt-5'>
+                <div className=''>
+                    <img className='w-50 img-fluid' src={product.img} alt="" />
                 </div>
-                <div className='col-6'>
+                <div className=''>
                     <h3>Name: {product.name}</h3>
                     <p>Description: {product.description}</p>
                     <p>Suppllyer: {product.suppllyer}</p>
@@ -67,9 +56,10 @@ const UpdateProducts = () => {
                         <Link to='/manageinventory' className='btn btn-success'>Manage Inventory</Link>
                     </div>
                 </div>
-
-
             </div>
+
+
+
 
 
         </div>
