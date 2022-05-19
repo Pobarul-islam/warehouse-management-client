@@ -1,6 +1,32 @@
+# warehouse-management-client-side
+
+
+## Pages 
+
+- ### Home 
+- ### About
+- ### Inventory
+- ### Blogs
+- ### Admin
+
+
+
+## Used dependencies
+
+- ### Rect Bootstrap 
+- ### Font Awsome
+- ### Font animate.css
+- ### react-router-dom
+- ### firebase
+- ### swiper
+- ### react-firebase-hooks
+- ### recharts
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 

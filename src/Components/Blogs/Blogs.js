@@ -3,7 +3,7 @@ import './Blogs.css'
 const Blogs = () => {
     return (
         <div className='container mt-5'>
-            
+
             <div className="">
                 <div className='mt-4'>
                     <img className='img-fluid' src="https://cdn.educba.com/academy/wp-content/uploads/2018/07/Java-Script-vs-Node-JS-1.png" alt="" />
@@ -30,6 +30,7 @@ const Blogs = () => {
 
                 <div>
                     <img className='img-fluid' src="https://uploads.toptal.io/blog/image/956/toptal-blog-image-1426676395222.jpeg" alt="" />
+
                     <p>
                         JWT, or JSON Web Token, is an open standard used to share information between two parties securely — a client and a server. In most cases, it's an encoded JSON containing a set of claims and a signature. It's usually used in the context of other authentication mechanisms like OAuth, OpenID to share user-related information. It's also a popular way to authenticate/authorize users in a microservice architecture.
                         When it comes to API authentication and server-to-server authorization, JSON web token (JWT) is particularly a useful technology. In terms of Single Sign-On (SSO), it means that a service provider can receive trustworthy information from the authentication server. By sharing a secret key with the Identity Provider, the Service Provider can hash a part of a token it receives and compare it to the signature of the token. Now, if that result matches the signature, the SP knows that the information provided has come from the other entity possessing the key.

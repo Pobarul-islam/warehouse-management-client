@@ -1,9 +1,11 @@
 import React from 'react';
+import '../NotFound/NotFound.css'
+import errorimg from '../NotFound/error-pic.webp'
 
 const NotFound = () => {
     return (
-        <div>
-            <h1 className='mt-5 text-center'>404 Not Found</h1>
+        <div className='container'>
+            <img className='errorImg' src={errorimg} alt="" />
         </div>
     );
 };

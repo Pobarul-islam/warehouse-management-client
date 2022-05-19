@@ -5,8 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 const UpdateProducts = () => {
 
     const { id } = useParams();
-    const [qty, setQty] = useState(0);
-
+    const [inventory, setInventory] = useState({})
     const [product, setProduct] = useState({});
     useEffect(() => {
         const url = `http://localhost:5000/service/${id}`
@@ -16,13 +15,27 @@ const UpdateProducts = () => {
     }, [])
 
 
-
-    const additem = (e) => {
+    const update = (e) => {
         e.preventDefault()
-        console.log('hello world')
-
+        const url = `http://localhost:5000/service/${id}`;
+        const quant = e.target.quantity.value
+        console.log(quant)
+        const quantity = parseInt(product) + product.quantity;
+        const formData = { quantity }
 
     }
+
+    //     fetch(url, {
+    //         method: 'PUT',
+    //         headers: { 'Content-Type': 'application/json' },
+    //         body: JSON.stringify(formData)
+    //     })
+    //         .then(response => response.json())
+    //         .then(json => {
+
+    //             setProduct(product)
+    //         })
+    // }
 
 
 
@@ -43,16 +56,11 @@ const UpdateProducts = () => {
 
                     <h5>Price: {product.price}</h5>
                     <h5>Quantity: {product.quantity}</h5> <br /> <br />
-                    <InputGroup className="mb-3 w-75 ms">
-                        <FormControl
-                            placeholder="Recipient's username"
-                            aria-label="Recipient's username"
-                            aria-describedby="basic-addon2"
-                        />
-                        <Button onClick={additem} className='btn-primary text-white' variant="outline-secondary" id="button-addon2">
-                            Add
-                        </Button>
-                    </InputGroup>
+                    <form onSubmit={update} className="add-quantity">
+                        <input name='quantity' type="number" placeholder='Add Quantity' required />
+                        <button type='submit' className='btn btn-primary'>ADD</button>
+
+                    </form>
 
                     <button className='btn btn-primary'>Delever</button>
                     <div className='w-50 mx-auto'>
