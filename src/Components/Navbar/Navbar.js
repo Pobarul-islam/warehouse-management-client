@@ -5,6 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import CoustomLink from '../../CoustomLink/CoustomLink';
 import auth from '../../firebase.init';
+import Slider from '../Slider/Slider';
 
 const Navbar = () => {
     const [user] = useAuthState(auth);
@@ -16,7 +17,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <div className="container">
                     <Link className="navbar-brand" to="/">Stock Watches</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,6 +103,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+
         </div>
 
 

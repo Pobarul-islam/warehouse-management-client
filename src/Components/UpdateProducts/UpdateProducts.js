@@ -1,7 +1,7 @@
 import { stringify } from '@firebase/util';
 import React, { useEffect, useState } from 'react';
 import { Button, FormControl, InputGroup } from 'react-bootstrap';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 
 const UpdateProducts = () => {
 
@@ -38,6 +38,10 @@ const UpdateProducts = () => {
             })
 
     }
+
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/myitems';
 
     function deliver() {
         const url = `https://rocky-reef-06077.herokuapp.com/service/${id}`;

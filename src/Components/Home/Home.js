@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import banner from '../../img/main-banner.jpg';
+import banner from '../../img/slider-2.jpg';
 import UseUsers from '../../hooks/UseUsers';
 import SingleProducts from '../SingleProducts/SingleProducts';
 import Footer from '../Footer/Footer';
 import { Link, Navigate } from 'react-router-dom';
+import { Carousel } from 'react-bootstrap';
+import Slider from '../Slider/Slider';
 
 const Home = ({ user }) => {
     const usersData = UseUsers('https://rocky-reef-06077.herokuapp.com/service')
@@ -17,13 +19,25 @@ const Home = ({ user }) => {
     // console.log(usersData)
     return (
         <div >
+            <div className='mt-5'>
+                <Slider></Slider>
+            </div>
+
             <section className='container'>
+                <h2 className='text-center text-primary'>Watches About</h2>
 
-                <div className='homesection container ml-5 row '>
+                <div className='homesection container mt-5 row '>
                     <div className='heading-text col-12 col-lg-6 '>
-                        <h1 className=''>Choose Your <br /> Favorite Item & <br /> Collect Super <br /> Discount.</h1>
+                        <h3 className=''>Choose Your <br /> Favorite Item & <br /> Collect Super <br /> Discount.</h3>
 
-                        <p>My dear customer, I always work for the satisfaction of my <br />    <span>client and try to provide something good.</span></p>
+                        <p>
+                            The important characteristics of a good quality watch
+                            MATERIAL OF A WATCH. A quality watch is at least made of Stainless Steel. ...
+                            KIND OF WATCH GLASS. ...
+                            THE WATCH MOVEMENT. ...
+                            WATER RESISTANCE OF A WATCH. ...
+                            ALSO AN AFFORDABLE WATCH HAS A BEAUTIFUL FINISH. ...
+                            THE NAME AND HERITAGE OF A WATCH BRAND.</p>
 
                         <button className='btn btn-primary'>Explore Now</button>
                     </div>
