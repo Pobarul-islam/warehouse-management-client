@@ -5,7 +5,7 @@ const useUsers = (url) => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/service')
+        fetch('https://rocky-reef-06077.herokuapp.com/service')
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [])

@@ -11,7 +11,7 @@ const ProtectedInventor = ({ user, handleControl }) => {
 
         if (proced) {
             console.log('delete id', id)
-            const url = `http://localhost:5000/service/${id}`;
+            const url = `https://rocky-reef-06077.herokuapp.com/service/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -27,7 +27,7 @@ const ProtectedInventor = ({ user, handleControl }) => {
 
     }
     return (
-        <div className='col-12 col-lg-4 gy-4'>
+        <div className='col-4 gy-4'>
 
             <Card className='shadow-lg mb-3 bg-white rounded' style={{ width: '18rem' }}>
                 <Card.Img className='w-50 mx-auto mt-3' variant="top" src={img} />

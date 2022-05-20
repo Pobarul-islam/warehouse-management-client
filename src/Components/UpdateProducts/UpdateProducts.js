@@ -1,3 +1,4 @@
+import { stringify } from '@firebase/util';
 import React, { useEffect, useState } from 'react';
 import { Button, FormControl, InputGroup } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
@@ -5,13 +6,55 @@ import { Link, useParams } from 'react-router-dom';
 const UpdateProducts = () => {
 
     const { id } = useParams();
+    const [inventory, setInventory] = useState({});
     const [product, setProduct] = useState({});
+    const [quantproduct, setQuantity] = useState(0)
     useEffect(() => {
-        const url = `http://localhost:5000/service/${id}`
+        const url = `https://rocky-reef-06077.herokuapp.com/service/${id}`
         fetch(url)
             .then(res => res.json())
-            .then(data => setProduct(data))
-    }, [])
+            .then(data => {
+                setProduct(data)
+                setQuantity(data.quantity)
+            })
+    }, [quantproduct])
+
+    const update = (e) => {
+        e.preventDefault()
+        const url = `https://rocky-reef-06077.herokuapp.com/service/${id}`;
+        const quant = e.target.quantity.value;
+        const quantity = parseInt(quant) + quantproduct
+        const formData = { quantity }
+
+        fetch(url, {
+            method: 'PUT',
+            headers: { 'content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        })
+            .then(response => response.json())
+            .then(json => {
+
+                setQuantity(quantity)
+            })
+
+    }
+
+    function deliver() {
+        const url = `https://rocky-reef-06077.herokuapp.com/service/${id}`;
+
+        const quantity = quantproduct - 1
+        const formData = { quantity }
+
+        fetch(url, {
+            method: 'PUT',
+            headers: { 'content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        })
+            .then(response => response.json())
+            .then(json => {
+                setQuantity(quantity)
+            })
+    }
 
 
 
@@ -31,15 +74,15 @@ const UpdateProducts = () => {
                     <p>Suppllyer: {product.suppllyer}</p>
 
                     <h5>Price: {product.price}</h5>
-                    <h5>Quantity: {product.quantity}</h5> <br /> <br />
-                    <form className="add-quantity">
+                    <h5>Quantity: {quantproduct}</h5> <br /> <br />
+                    <form onSubmit={update} className="add-quantity">
                         <input name='quantity' type="number" placeholder='Add Quantity' required />
 
-                        <button type='submit' className='btn btn-primary'>ADD</button>
+                        <button id='additem' type='submit' className='btn btn-primary'>ADD</button>
 
                     </form>
 
-                    <button className='btn btn-primary'>Delever</button>
+                    <button onClick={deliver} className='btn btn-primary'>Delever</button>
                     <div className='w-50 mx-auto'>
                         <Link to='/manageinventory' className='btn btn-success'>Manage Inventory</Link>
                     </div>

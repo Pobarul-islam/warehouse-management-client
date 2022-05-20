@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
+import Loading from './Components/loading/Loading';
 import Home from './Components/Home/Home';
 import Blog from './Components/Blogs/Blogs';
 import About from './Components/About/About';
@@ -17,11 +18,26 @@ import ManageInventory from './Components/ManageInventory/ManageInventory';
 import AddItems from './Components/AddItems/AddItems';
 import MyItems from './Components/MyItems/MyItems';
 import ManageItem from './ManageItem/ManageItem';
-
+import { useState } from 'react';
+import useUsers from './hooks/UseUsers';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
 function App() {
+  const user = useUsers()
+
+  const [loading, setloading] = useState(true);
+  const loadingHandler = () => {
+    setTimeout(() => {
+      setloading(false)
+    }, 2000)
+  }
+  loadingHandler()
+  if (loading) {
+    return <Loading></Loading>
+  }
   return (
     <div className="App">
 
@@ -60,7 +76,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
-
+      <ToastContainer />
     </div>
   );
 }

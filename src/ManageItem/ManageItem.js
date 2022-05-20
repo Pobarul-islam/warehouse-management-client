@@ -6,7 +6,7 @@ const ManageItem = () => {
     const handleDelete = id => {
         const procced = window.confirm('Are you sure?')
         if (procced) {
-            const url = `http://localhost:5000/service/${id}`
+            const url = `https://rocky-reef-06077.herokuapp.com/service/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
