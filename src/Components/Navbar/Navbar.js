@@ -25,9 +25,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <CoustomLink className="nav-link active" aria-current="page" to="/home">Home</CoustomLink>
                             </li>
-                            {/* <li className="nav-item">
-                                <CoustomLink className="nav-link" to="/inventory/:id">Inventory</CoustomLink>
-                            </li> */}
+
 
                             <li className='nav-item'>
 
@@ -103,6 +101,9 @@ const Navbar = () => {
                 </div>
             </nav>
         </div>
+
+
+
     );
 };
 

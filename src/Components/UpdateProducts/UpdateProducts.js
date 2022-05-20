@@ -5,7 +5,6 @@ import { Link, useParams } from 'react-router-dom';
 const UpdateProducts = () => {
 
     const { id } = useParams();
-    const [inventory, setInventory] = useState({})
     const [product, setProduct] = useState({});
     useEffect(() => {
         const url = `http://localhost:5000/service/${id}`
@@ -13,18 +12,6 @@ const UpdateProducts = () => {
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
-
-
-    const update = (e) => {
-        e.preventDefault()
-        const url = `http://localhost:5000/service/${id}`;
-        const quant = e.target.quantity.value
-        console.log(quant)
-        const quantity = parseInt(product) + product.quantity;
-        const formData = { quantity }
-
-    }
-
 
 
 
@@ -45,8 +32,9 @@ const UpdateProducts = () => {
 
                     <h5>Price: {product.price}</h5>
                     <h5>Quantity: {product.quantity}</h5> <br /> <br />
-                    <form onSubmit={update} className="add-quantity">
+                    <form className="add-quantity">
                         <input name='quantity' type="number" placeholder='Add Quantity' required />
+
                         <button type='submit' className='btn btn-primary'>ADD</button>
 
                     </form>
