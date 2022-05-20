@@ -18,7 +18,7 @@ const ManageInventory = () => {
 
     return (
 
-        <div className='container mt-5 mb-3'>
+        <div className='container manageinventory mb-3'>
             <h1 className='text-center'>Our Watches {allProducts.length}</h1>
             <div className='row'>
                 {

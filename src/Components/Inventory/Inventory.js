@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import ProtectedInventor from '../ProtectedInventor/ProtectedInventor';
+import './inventory.css';
 
 
 const Inventory = () => {
@@ -18,8 +19,8 @@ const Inventory = () => {
 
     return (
 
-        <div className='container mt-5 mb-3'>
-            <h1 className='text-center'>Our Watches {allProducts.length}</h1>
+        <div className='container inventory mb-3'>
+            <h1 className='text-center text-primary'>Our Watches {allProducts.length}</h1>
             <div className='row'>
                 {
                     allProducts?.map(user => <ProtectedInventor key={user._id} handleControl={handleControl} user={user}></ProtectedInventor>)

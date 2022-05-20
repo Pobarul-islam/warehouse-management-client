@@ -1,5 +1,6 @@
 import React from 'react';
 import useProducts from '../Components/Hooks/useProducts';
+import './Manageitem.css';
 
 const ManageItem = () => {
     const [products, setProducts] = useProducts();
@@ -22,8 +23,8 @@ const ManageItem = () => {
     }
 
     return (
-        <div className='container mt-5'>
-            <h2 className='text-center'>Manage Your Products</h2>
+        <div className='container manageitem'>
+            <h2 className='text-center text-primary'>Manage Your Products</h2>
             {
                 products.map(products => <div key={products._id}>
                     <div className='w-50 mx-auto'>

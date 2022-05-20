@@ -14,16 +14,19 @@
 .about img {
     border-radius: 20px;
 }
+
 @media only screen and (max-width: 1000px) {
     .about {
         display: flex;
         flex-direction: column;
     }
+
     .about img {
         border-radius: 20px;
         width: 100%;
     }
 }
+
 @media only screen and (max-width: 600px) {
 
 
@@ -36,4 +39,8 @@
         border-radius: 20px;
         width: 100%;
     }
+}
+
+.about {
+    margin-top: 15%;
 }

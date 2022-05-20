@@ -2,7 +2,8 @@ import React from 'react'
 import './Blogs.css'
 const Blogs = () => {
     return (
-        <div className='container mt-5'>
+        <div className='container blogs'>
+            <h2 className='text-center text-primary'>Watch Blogs</h2>
 
             <div className="">
                 <div className='mt-4'>

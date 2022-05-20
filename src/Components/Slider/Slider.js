@@ -3,12 +3,13 @@ import { Carousel } from 'react-bootstrap';
 import slider1 from '../../img/1.png';
 import slider2 from '../../img/2.png';
 import slider3 from '../../img/3.png';
+import './Slider.css';
 
 
 const Slider = () => {
     return (
         <div>
-            <div className='w-100 mb-5'>
+            <div className='w-100 mb-5 slider'>
                 <Carousel>
                     <Carousel.Item>
                         <img
