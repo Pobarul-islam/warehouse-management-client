@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
+import Footer from '../Footer/Footer';
 import ProtectedInventor from '../ProtectedInventor/ProtectedInventor';
 import './inventory.css';
 
@@ -30,6 +31,7 @@ const Inventory = () => {
                 }
 
             </div>
+            <Footer></Footer>
 
         </div>
     );

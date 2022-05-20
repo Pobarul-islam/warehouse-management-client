@@ -1,9 +1,14 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
+import './Myitems.css';
 
 const MyItems = () => {
     return (
-        <div className='mt-5'>
-            <h2>This is My Item Page</h2>
+        <div>
+            <div className='myitems'>
+                <h2 className='text-center text-primary'>My Items</h2>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };

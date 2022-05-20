@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer/Footer'
 import './Blogs.css'
 const Blogs = () => {
     return (
@@ -69,6 +70,7 @@ const Blogs = () => {
 
 
             </div>
+            <Footer></Footer>
         </div>
     )
 }

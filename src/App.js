@@ -10,7 +10,6 @@ import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import Singup from './Components/Singup/Singup';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
-// import ManageInventory from './Components/ManageInventory/ManageInventory';
 import Inventory from './Components/Inventory/Inventory';
 import Contact from './Components/Contact/Contact';
 import UpdateProducts from './Components/UpdateProducts/UpdateProducts';

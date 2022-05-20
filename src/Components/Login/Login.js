@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Footer from '../Footer/Footer';
 import './Login.css';
 
 const Login = () => {
@@ -75,6 +76,7 @@ const Login = () => {
             <div className='text-center'>
                 New to Stock Watches ? <Link className='text-decoration-none' to="/singup">Please Create an account !!</Link>
             </div>
+
 
         </div>
     );

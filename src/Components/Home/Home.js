@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer';
 import { Link, Navigate } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
 import Slider from '../Slider/Slider';
+import Progress from '../Progress/Progress';
 
 const Home = ({ user }) => {
     const usersData = UseUsers('https://rocky-reef-06077.herokuapp.com/service')
@@ -64,6 +65,7 @@ const Home = ({ user }) => {
 
 
             </div>
+            <Progress></Progress>
             <Footer></Footer>
 
         </div>

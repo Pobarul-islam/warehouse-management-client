@@ -10,7 +10,7 @@ const SocialLogin = () => {
     let errorElement;
     if (error) {
         return (
-       errorElement=<div>
+            errorElement = <div>
                 <p className='text-danger'>Error: {error.message}</p>
             </div>
         );
@@ -21,7 +21,7 @@ const SocialLogin = () => {
     return (
         <div>
             <div className='mt-3 d-flex align-items-center'>
-                <div style={{height:"1px"}} className='w-50 bg-primary'></div>
+                <div style={{ height: "1px" }} className='w-50 bg-primary'></div>
                 <p className='mt-2 px-2'>or</p>
                 <div style={{ height: "1px" }} className='w-50 bg-primary'></div>
             </div>
@@ -29,11 +29,12 @@ const SocialLogin = () => {
             <div>
                 <button
                     onClick={() => signInWithGoogle()}
-                    
+
                     className='btn btn-dark w-50 d-block mx-auto'>Google SignIn
-                <img style={{width:"50px"}} src={google} alt="" />
+                    <img style={{ width: "50px" }} src={google} alt="" />
                 </button>
             </div>
+
         </div>
     );
 };

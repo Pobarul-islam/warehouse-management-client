@@ -5,6 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import CoustomLink from '../../CoustomLink/CoustomLink';
 import auth from '../../firebase.init';
+import Footer from '../Footer/Footer';
 import Slider from '../Slider/Slider';
 
 const Navbar = () => {
@@ -24,7 +25,7 @@ const Navbar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarText">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                             <li className="nav-item">
                                 <CoustomLink className="nav-link active" aria-current="page" to="/home">Home</CoustomLink>
                             </li>
@@ -103,6 +104,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+
 
         </div>
 

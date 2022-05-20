@@ -1,28 +1,22 @@
 import React from 'react';
+import { Button, ProgressBar } from 'react-bootstrap';
 
 const Progress = () => {
     return (
         <div>
             <h2 className='text-center'>Progress Info</h2>
-          
-            <div className=' container mt-5'>
-                <div className='row'>
-                    <div className='col-3 card text-center '><h4>Total Watches</h4>
-                        <h6>504738+</h6>
-                    </div>
-                    <div className='col-3 card text-center'><h4></h4>
-                        <h4>Ourt Client</h4>
-                        <h6>89680+</h6>
-                    </div>
-                    <div className='col-3 card text-center'><h4>Service Point</h4>
-                        <h6>7860+</h6>
-                        
-                    </div>
-                    <div className='col-3 card text-center'><h4>Warranty Service</h4>
-                        <h6>78987+</h6>
-                        
-                    </div>
-                   
+
+            <div>
+                <div className='container'>
+                    <h4 className='text-primary'>Our Coustomer</h4>
+                    <ProgressBar striped variant="success" now={40} />
+                    <h4 className='text-primary'>Watches</h4>
+                    <ProgressBar className='mt-4' striped variant="info" now={20} />
+                    <h4 className='text-primary'>Services</h4>
+                    <ProgressBar className='mt-4' striped variant="warning" now={60} />
+                    <h4 className='text-primary'>Service Center</h4>
+                    <ProgressBar className='mt-4' striped variant="danger" now={80} />
+
                 </div>
             </div>
         </div>

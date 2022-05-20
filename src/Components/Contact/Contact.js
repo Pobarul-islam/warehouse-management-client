@@ -3,6 +3,7 @@ import './Contact.css'
 import location from './location.svg'
 import whatsapp from './whatsapp.svg'
 import mail from './mail.svg'
+import Footer from '../Footer/Footer'
 function Contact() {
     return (
         <div className='contact-section  '>
@@ -47,6 +48,7 @@ function Contact() {
                     <button className='btn mt-2 btn-lg'>Send Message</button>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     )
 }
