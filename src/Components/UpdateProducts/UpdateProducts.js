@@ -2,6 +2,7 @@ import { stringify } from '@firebase/util';
 import React, { useEffect, useState } from 'react';
 import { Button, FormControl, InputGroup } from 'react-bootstrap';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
+import './UpdateProduct.css';
 
 const UpdateProducts = () => {
 
@@ -68,7 +69,7 @@ const UpdateProducts = () => {
 
 
 
-            <div className='d-flex col-12 justify-content-between container mt-5'>
+            <div className='d-flex col-12 justify-content-between container updateproduct'>
                 <div className=''>
                     <img className='w-50 img-fluid' src={product.img} alt="" />
                 </div>

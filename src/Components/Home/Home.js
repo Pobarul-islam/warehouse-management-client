@@ -39,11 +39,11 @@ const Home = ({ user }) => {
                             ALSO AN AFFORDABLE WATCH HAS A BEAUTIFUL FINISH. ...
                             THE NAME AND HERITAGE OF A WATCH BRAND.</p>
 
-                        <button className='btn btn-primary'>Explore Now</button>
+                        <button className='btn btn-primary mb-3'>Explore Now</button>
                     </div>
 
                     <div className='col-12 col-lg-6'>
-                        <img className='image-heading img-fluid w-100' src={banner} alt="" />
+                        <img className='image-heading img-fluid' src={banner} alt="" />
                     </div>
                 </div>
 

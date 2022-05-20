@@ -6,7 +6,7 @@ import mail from './mail.svg'
 function Contact() {
     return (
         <div className='contact-section  '>
-            <div className='container contact-container'>
+            <div className='container contact-container contact'>
                 <div className=' contact-left'>
                     <h1>Let's chat.</h1>
                     <h1> Tell me about your Product.</h1>

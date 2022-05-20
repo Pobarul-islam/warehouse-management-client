@@ -1,9 +1,12 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import './Additem.css';
 
 const AddItems = () => {
+    const navigate = useNavigate('/additems')
+
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
