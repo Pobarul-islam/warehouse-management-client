@@ -25,6 +25,9 @@
 
 # Getting Started with Create React App
 
+
+# Email and singup form added, mongodb, firebase, bootstrap, venila css, react bootstrap added.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 

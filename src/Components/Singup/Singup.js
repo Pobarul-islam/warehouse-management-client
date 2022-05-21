@@ -15,11 +15,7 @@ const Singup = () => {
     const navigate = useNavigate();
 
 
-    const auth = getAuth();
-    sendEmailVerification(auth.currentUser)
-        .then(() => {
-            console.log('Email verification send')
-        });
+
 
     const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
 
@@ -54,6 +50,9 @@ const Singup = () => {
 
         createUserWithEmailAndPassword(email, password);
     }
+
+
+
 
 
 
