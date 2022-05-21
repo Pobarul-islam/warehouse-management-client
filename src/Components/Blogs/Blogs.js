@@ -3,10 +3,11 @@ import Footer from '../Footer/Footer'
 import './Blogs.css'
 const Blogs = () => {
     return (
-        <div className='container blogs'>
-            <h2 className='text-center text-primary'>Watch Blogs</h2>
+        <div className=' blogs'>
 
-            <div className="col-12 col-lg-12">
+            <div className="col-12 container">
+                <h2 className='text-center text-primary'>Watch Blogs</h2>
+
                 <div className='mt-4'>
                     <img className='img-fluid' src="https://cdn.educba.com/academy/wp-content/uploads/2018/07/Java-Script-vs-Node-JS-1.png" alt="" />
                     <ol className='mt-4'>

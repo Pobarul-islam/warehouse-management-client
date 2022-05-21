@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import './Singup.css'
 import SocialLogin from '../Login/SocialLogin/SocialLogin';
+import { getAuth, sendEmailVerification } from 'firebase/auth';
 
 const Singup = () => {
     const [email, setEmail] = useState('');
@@ -12,6 +13,13 @@ const Singup = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
+
+
+    const auth = getAuth();
+    sendEmailVerification(auth.currentUser)
+        .then(() => {
+            console.log('Email verification send')
+        });
 
     const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
 
@@ -26,6 +34,8 @@ const Singup = () => {
     const handleConfirmPassword = event => {
         setConfirmPassword(event.target.value);
     }
+
+
 
     if (user) {
         navigate('/inventory/:id')
@@ -48,7 +58,7 @@ const Singup = () => {
 
 
     return (
-        <div className='singup-form mx-auto'>
+        <div className='singup-form mx-auto col-12 col-lg-4'>
             <h2 className='text-center'>Please Register !!!</h2>
 
             <Form onSubmit={handleCreateUser} className='card p-5'>

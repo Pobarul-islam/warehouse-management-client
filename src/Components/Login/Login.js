@@ -3,7 +3,6 @@ import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-import Footer from '../Footer/Footer';
 import './Login.css';
 
 const Login = () => {
@@ -42,7 +41,7 @@ const Login = () => {
     return (
 
 
-        <div className='singup-form mx-auto'>
+        <div className='singup-form mx-auto col-12 col-lg-4'>
             <h2 className='text-center'>Please Login </h2>
 
 

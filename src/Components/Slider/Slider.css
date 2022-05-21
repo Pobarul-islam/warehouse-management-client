@@ -1,3 +1,8 @@
 .slider {
     margin-top: 4%;
 }
+
+.slider img {
+    height: 550px;
+    width: 1200px;
+}

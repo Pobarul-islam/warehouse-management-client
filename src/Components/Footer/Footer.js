@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <div className='bg-black p-4 w-100 mt-5'>
             <div className='fottercontent text-center text-white'>
-                &copy;Stock Watches Created by Pobarul islam - {date}
+                &copy; Stock Watches Created by Pobarul islam - {date}
             </div>
         </div>
 

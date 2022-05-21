@@ -5,8 +5,6 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import CoustomLink from '../../CoustomLink/CoustomLink';
 import auth from '../../firebase.init';
-import Footer from '../Footer/Footer';
-import Slider from '../Slider/Slider';
 
 const Navbar = () => {
     const [user] = useAuthState(auth);
@@ -20,40 +18,40 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <div className="container">
-                    <Link className="navbar-brand" to="/">Stock Watches</Link>
+                    <Link className="navbar-brand text-primary" to="/">Stock Watches</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarText">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <CoustomLink className="nav-link active" aria-current="page" to="/home">Home</CoustomLink>
+                                <CoustomLink className="nav-link active text-primary" aria-current="page" to="/home">Home</CoustomLink>
                             </li>
 
 
                             <li className='nav-item'>
 
-                                <CoustomLink className='nav-link' to="/inventory/:id">Inventory </CoustomLink>
+                                <CoustomLink className='nav-link text-primary' to="/inventory/:id">Inventory </CoustomLink>
 
 
                             </li>
                             <li className='nav-item'>
 
 
-                                <CoustomLink className='nav-link' to="/blogs">Blogs </CoustomLink>
+                                <CoustomLink className='nav-link text-primary' to="/blogs ">Blogs </CoustomLink>
 
 
 
                             </li>
                             <li className='nav-item'>
 
-                                <CoustomLink className='nav-link' to="/about"> About</CoustomLink>
+                                <CoustomLink className='nav-link text-primary' to="/about"> About</CoustomLink>
 
                             </li>
 
 
                             <li>
-                                <CoustomLink className='nav-link' to="/contact"> Contact</CoustomLink>
+                                <CoustomLink className='nav-link text-primary' to="/contact"> Contact</CoustomLink>
                             </li>
 
                         </ul>
@@ -69,17 +67,17 @@ const Navbar = () => {
                                 user && <>
                                     <li className='nav-item'>
 
-                                        <CoustomLink className='nav-link' to="/manageitem"> ManageItem</CoustomLink>
+                                        <CoustomLink className='nav-link text-primary' to="/manageitem"> ManageItem</CoustomLink>
 
                                     </li>
                                     <li className='nav-item'>
 
-                                        <CoustomLink className='nav-link' to="/additems"> AddItem</CoustomLink>
+                                        <CoustomLink className='nav-link text-primary' to="/additems"> AddItem</CoustomLink>
 
                                     </li>
                                     <li className='nav-item'>
 
-                                        <CoustomLink className='nav-link' to="/myitem"> MyItems</CoustomLink>
+                                        <CoustomLink className='nav-link text-primary' to="/myitem"> MyItems</CoustomLink>
 
                                     </li>
                                 </>

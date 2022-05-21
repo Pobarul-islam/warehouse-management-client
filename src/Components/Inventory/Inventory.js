@@ -21,8 +21,9 @@ const Inventory = () => {
     return (
 
         <div className='container inventory mb-3'>
-            <h1 className='text-center text-primary'>Our Watches {allProducts.length}</h1>
+
             <div className='row'>
+                <h1 className='text-center text-primary'>Our Watches {allProducts.length}</h1>
                 {
                     allProducts?.map(user => <ProtectedInventor key={user._id} handleControl={handleControl} user={user}></ProtectedInventor>)
 
@@ -31,7 +32,7 @@ const Inventory = () => {
                 }
 
             </div>
-            <Footer></Footer>
+
 
         </div>
     );

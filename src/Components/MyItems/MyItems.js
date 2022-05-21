@@ -1,14 +1,22 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
+import Progress from '../Progress/Progress';
+import About from '../About/About';
 import './Myitems.css';
 
 const MyItems = () => {
     return (
         <div>
             <div className='myitems'>
-                <h2 className='text-center text-primary'>My Items</h2>
+
+                <Progress></Progress>
+                <About></About>
+
+
+
             </div>
-            <Footer></Footer>
+
+
         </div>
     );
 };
