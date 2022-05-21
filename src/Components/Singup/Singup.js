@@ -53,9 +53,6 @@ const Singup = () => {
 
 
 
-
-
-
     return (
         <div className='singup-form mx-auto col-12 col-lg-4'>
             <h2 className='text-center'>Please Register !!!</h2>
