@@ -26,6 +26,9 @@
 # Getting Started with Create React App
 
 
+# Client site Repo Link : https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-Pobarul-islam
+# Server site Repo Link : https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Pobarul-islam
+# Live link: https://stockwatches.netlify.app/
 # Email and singup form added, mongodb, firebase, bootstrap, venila css, react bootstrap added.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
