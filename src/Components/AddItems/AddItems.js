@@ -14,7 +14,7 @@ const AddItems = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    const url = `http://localhost:5000/service`;
+    const url = `https://warehouseserver.onrender.com/service`;
     fetch(url, {
       method: 'POST',
       headers: {

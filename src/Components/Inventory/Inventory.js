@@ -11,7 +11,7 @@ const Inventory = () => {
   };
   const [allProducts, setAllProducts] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/service')
+    fetch('https://warehouseserver.onrender.com/service')
       .then((res) => res.json())
       .then((data) => setAllProducts(data));
   }, [control]);

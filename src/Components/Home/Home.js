@@ -10,7 +10,7 @@ import Slider from '../Slider/Slider';
 import Progress from '../Progress/Progress';
 
 const Home = ({ user }) => {
-  const usersData = UseUsers('http://localhost:5000/service');
+  const usersData = UseUsers('https://warehouseserver.onrender.com/service');
   // console.log(usersData)
   if (usersData.length) {
     usersData.length = 6;

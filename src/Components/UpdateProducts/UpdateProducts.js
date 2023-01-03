@@ -10,7 +10,7 @@ const UpdateProducts = () => {
   const [product, setProduct] = useState({});
   const [quantproduct, setQuantity] = useState(0);
   useEffect(() => {
-    const url = `http://localhost:5000/service/${id}`;
+    const url = `https://warehouseserver.onrender.com/service/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -21,7 +21,7 @@ const UpdateProducts = () => {
 
   const update = (e) => {
     e.preventDefault();
-    const url = `http://localhost:5000/service/${id}`;
+    const url = `https://warehouseserver.onrender.com/service/${id}`;
     const quant = e.target.quantity.value;
     const quantity = parseInt(quant) + quantproduct;
     const formData = { quantity };
@@ -42,7 +42,7 @@ const UpdateProducts = () => {
   const from = location.state?.from?.pathname || '/myitems';
 
   function deliver() {
-    const url = `http://localhost:5000/service/${id}`;
+    const url = `https://warehouseserver.onrender.com/service/${id}`;
 
     const quantity = quantproduct - 1;
     const formData = { quantity };
