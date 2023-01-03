@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from 'react';
 
 const useProducts = () => {
-    const [products, setProducts] = useState([]);
-    useEffect(() => {
-        fetch('https://rocky-reef-06077.herokuapp.com/service')
-            .then(res => res.json())
-            .then(data => setProducts(data));
-    }, []);
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch('http://localhost:5000/service')
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
 
-    return [products, setProducts];
-}
+  return [products, setProducts];
+};
 
 export default useProducts;
