@@ -8,6 +8,9 @@ import { Link, Navigate } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
 import Slider from '../Slider/Slider';
 import Progress from '../Progress/Progress';
+import Testimonial from '../../Testimonial/Testimonial';
+import FilipBox from '../../FilibBox/FilipBox';
+import Package from '../../Package/Package';
 
 const Home = ({ user }) => {
   const usersData = UseUsers('https://warehouseserver.onrender.com/service');
@@ -58,6 +61,9 @@ const Home = ({ user }) => {
           ))}
         </div>
       </div>
+      <FilipBox/>
+      <Testimonial/>
+      <Package/>
       <Progress></Progress>
       <Footer></Footer>
     </div>

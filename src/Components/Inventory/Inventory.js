@@ -21,7 +21,7 @@ const Inventory = () => {
     <div className="container inventory mb-3">
       <div className="row">
         <h1 className="text-center text-primary">
-          Our Watches {allProducts.length}
+          Our Watches
         </h1>
         {allProducts?.map((user) => (
           <ProtectedInventor

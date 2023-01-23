@@ -31,7 +31,7 @@ const Navbar = () => {
 
                             <li className='nav-item'>
 
-                                <CoustomLink className='nav-link text-primary' to="/inventory/:id">Inventory </CoustomLink>
+                                <CoustomLink className='nav-link text-primary' to="/inventory">Inventory </CoustomLink>
 
 
                             </li>
