@@ -5,7 +5,6 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import './Singup.css'
 import SocialLogin from '../Login/SocialLogin/SocialLogin';
-import { getAuth, sendEmailVerification } from 'firebase/auth';
 
 const Singup = () => {
     const [email, setEmail] = useState('');

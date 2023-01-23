@@ -16,7 +16,7 @@ const SocialLogin = () => {
         );
     }
     if (user) {
-        navigate('/services')
+        navigate('/inventory')
     }
     return (
         <div>

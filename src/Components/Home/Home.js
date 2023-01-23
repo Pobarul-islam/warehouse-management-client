@@ -4,8 +4,6 @@ import banner from '../../img/slider-2.jpg';
 import UseUsers from '../../hooks/UseUsers';
 import SingleProducts from '../SingleProducts/SingleProducts';
 import Footer from '../Footer/Footer';
-import { Link, Navigate } from 'react-router-dom';
-import { Carousel } from 'react-bootstrap';
 import Slider from '../Slider/Slider';
 import Progress from '../Progress/Progress';
 import Testimonial from '../../Testimonial/Testimonial';

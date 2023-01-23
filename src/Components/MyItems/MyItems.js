@@ -1,24 +1,19 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
-import Progress from '../Progress/Progress';
-import About from '../About/About';
 import './Myitems.css';
+import FilipBox from '../../FilibBox/FilipBox';
+import Package from '../../Package/Package';
+import Footer from '../Footer/Footer';
 
 const MyItems = () => {
-    return (
-        <div>
-            <div className='myitems'>
-
-                <Progress></Progress>
-                <About></About>
-
-
-
-            </div>
-
-
-        </div>
-    );
+  return (
+    <div>
+      <div className="myitems">
+        <FilipBox />
+        <Package />
+        <Footer />
+      </div>
+    </div>
+  );
 };
 
 export default MyItems;
